@@ -1,0 +1,56 @@
+
+
+/* Fondo de la página */
+body {
+    background-color: #050A0E;
+    color: #FAFAFA;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Navbar */
+nav {
+    background-color: #050A0E;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: #FCEE09;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #FF003C;
+}
+
+/* Botones estilo Cyberpunk */
+button {
+    background-color: #FCEE09;
+    color: #050A0E;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #FF003C;
+    color: #FAFAFA;
+}
+
+/* Títulos */
+h1, h2 {
+    color: #FCEE09;
+}
+
+/* Bordes y detalles */
+.box {
+    border: 2px solid #00F0FF;
+    padding: 20px;
+    margin: 10px 0;
+}
