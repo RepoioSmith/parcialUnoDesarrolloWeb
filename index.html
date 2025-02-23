@@ -1,17 +1,101 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <!-- FONT -->
-     
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fallerpedia</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
-    <h1 class="text-3xl font-bold underline">Hello world!</h1>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">Fallerpedia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="header-container">
+              <span id="theme-toggler">
+                <svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-sun" viewBox="0 0 16 16">
+                  <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6m0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8M8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0m0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13m8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5M3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8m10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0m-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0m9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707M4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708"/>
+                </svg>
+                <svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-moon-fill" viewBox="0 0 16 16" style="display: none;">
+                  <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278"/>
+                </svg>
+              </span>
+            </li>            
+          </ul>
+          <form id="search-form">
+            <input type="text" id="search-input" placeholder="Enter search term" />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <div id="general">
+    <div id="body-header">
+      
+    </div>
+    <div id="imagenes">
+
+    </div>
+  </div>
+  <!--<div class="global-explore-navigation" id="global-explore-navigation" data-testid="global-explore-navigation">
+    <div class="global-explore-navigation__top">
+      <nav class="global-explore-navigation__nav" aria-label="Fandom navigation">
+        
+  <div class="global-explore-navigation__item global-explore-navigation__item--with-icon
+  global-explore-navigation__explore global-explore-navigation__tab-item">
+    <button class="global-explore-navigation__button" aria-expanded="false" aria-controls="explore__content" data-testid="explore__button" data-tracking-label="explore-tab">
+      <span class="wds-avatar wds-avatar--square">
+        <span class="global-explore-navigation__icon">
+          <svg class="wds-icon"><use xlink:href="#wds-verticals-explore"></use></svg>			</span>
+        <span class="global-explore-navigation__label">Explore</span>
+      </span>
+    </button>
+    <div id="explore__content" class="global-explore-navigation__tab-container"></div>
+  </div>
+  
+                
+  <div class="global-explore-navigation__fan-central global-explore-navigation__item
+  global-explore-navigation__item--with-icon">
+    <a href="https://www.fandom.com/fancentral/home" data-tracking-label="fan-central" data-testid="fan-central__link">
+      <span class="wds-avatar wds-avatar--square">
+        <span class="global-explore-navigation__icon">
+          <svg class="wds-icon"><use xlink:href="#wds-verticals-fancentral"></use></svg>			</span>
+        <span class="global-explore-navigation__label">Fan Central</span>
+      </span>
+    </a>
+  </div>
+  
+              
+  <div class="global-explore-navigation__current-wiki global-explore-navigation__item global-explore-navigation__divider">
+    <span class="global-explore-navigation__label global-explore-navigation__label--main" id="current-wiki__label">
+      Current	</span>
+    <div class="global-explore-navigation__tab-item">
+      <button class="global-explore-n avigation__button" aria-labelledby="current-wiki__label" aria-expanded="false" aria-controls="current-wiki__content" data-current-wiki-logo="https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/3/39/Site-community-image/revision/latest/smart/width/120/height/120?cb=20220402114939" data-current-wiki-name="Binding of Isaac: Rebirth Wiki" data-tracking-label="current-wiki-tab" data-testid="current-wiki__button">
+        <span class="global-explore-navigation__icon wds-avatar">
+          <img class="wds-avatar__image" src="https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/3/39/Site-community-image/revision/latest/smart/width/36/height/36?cb=20220402114939" alt="Current">
+        </span>
+      </button>
+      <div id="current-wiki__content" class="global-explore-navigation__tab-container"></div>
+    </div>
+  </div>
+  
+        <div class="global-explore-navigation__recently-visited" data-testid="recently-visited__container"><div class="global-explore-navigation__divider"><span class="global-explore-navigation__label global-explore-navigation__label--main global-explore-navigation__label--divider" id="recently-visited__label">Recent</span><div class="global-explore-navigation__recently-visited RecentlyVisited-module_container__RwTTY"><div class="recently-visited-pages-avatars global-explore-navigation__item  wds-dropdown wds-open-to-right" data-tracking-label="recently-visited-link" data-testid="recently-visited__item"><a href="https://bindingofisaacrebirth.fandom.com/wiki/Characters" class="wds-dropdown__toggle"><span class="global-explore-navigation__icon wds-avatar PagesAvatars-module_iconContainer__dlQkA"><span class="wds-avatar__image wds-image-placeholder"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174 242" width="1em" height="1em"><path fill="#FA005A" d="M166.935 118.154L50.108 1.273A4.317 4.317 0 0045.405.34a4.314 4.314 0 00-2.662 3.99v98.276L7.365 67.22a4.31 4.31 0 00-4.702-.933A4.312 4.312 0 000 70.277v101.487a24.1 24.1 0 007.07 17.072l46.037 46.099a24.17 24.17 0 0017.068 7.085h33.68a24.14 24.14 0 0017.063-7.075l46.027-46.099A24.133 24.133 0 00174 171.774v-36.533a24.148 24.148 0 00-1.834-9.247 24.137 24.137 0 00-5.231-7.84z"></path><path fill="#FFC500" d="M131.297 160.901a7.24 7.24 0 01-2.108 5.111l-37.11 37.3a7.231 7.231 0 01-7.914 1.582 7.246 7.246 0 01-2.355-1.582l-36.99-37.3a7.221 7.221 0 01-2.117-5.096v-14.191a7.234 7.234 0 012.128-5.116l13.317-13.328a7.225 7.225 0 0110.245 0l18.624 18.645 18.596-18.65a7.22 7.22 0 015.122-2.127 7.228 7.228 0 015.121 2.127l13.318 13.328a7.218 7.218 0 012.123 5.116v14.181z"></path></svg></span></span></a><div class="wds-dropdown__content PagesAvatars-module_dropdownContent__SQXTl" data-testid="recently-visited__item-dropdown"><ul class="pages-list"><li class="pages-list__item"><a href="https://bindingofisaacrebirth.fandom.com/wiki/Characters" target="_self" rel="" data-tracking-label="recently-visited-link" class="pages-list__item__link"><h5 class="pages-list__item__header">Characters</h5><div class="pages-list__item__label"><img src="https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/3/39/Site-community-image/revision/latest/smart/width/36/height/36?cb=20220402114939" alt="Characters" class="pages-list__item__image"><span class="pages-list__item__text">Binding of Isaac: Rebirth Wiki</span></div></a></li></ul></div></div><div class="recently-visited-pages-avatars global-explore-navigation__item  wds-dropdown wds-open-to-right" data-tracking-label="recently-visited-link" data-testid="recently-visited__item"><a href="https://mudae.fandom.com/wiki/Kakera/Reactions" class="wds-dropdown__toggle"><span class="global-explore-navigation__icon wds-avatar PagesAvatars-module_iconContainer__dlQkA"><span class="wds-avatar__image wds-image-placeholder"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174 242" width="1em" height="1em"><path fill="#FA005A" d="M166.935 118.154L50.108 1.273A4.317 4.317 0 0045.405.34a4.314 4.314 0 00-2.662 3.99v98.276L7.365 67.22a4.31 4.31 0 00-4.702-.933A4.312 4.312 0 000 70.277v101.487a24.1 24.1 0 007.07 17.072l46.037 46.099a24.17 24.17 0 0017.068 7.085h33.68a24.14 24.14 0 0017.063-7.075l46.027-46.099A24.133 24.133 0 00174 171.774v-36.533a24.148 24.148 0 00-1.834-9.247 24.137 24.137 0 00-5.231-7.84z"></path><path fill="#FFC500" d="M131.297 160.901a7.24 7.24 0 01-2.108 5.111l-37.11 37.3a7.231 7.231 0 01-7.914 1.582 7.246 7.246 0 01-2.355-1.582l-36.99-37.3a7.221 7.221 0 01-2.117-5.096v-14.191a7.234 7.234 0 012.128-5.116l13.317-13.328a7.225 7.225 0 0110.245 0l18.624 18.645 18.596-18.65a7.22 7.22 0 015.122-2.127 7.228 7.228 0 015.121 2.127l13.318 13.328a7.218 7.218 0 012.123 5.116v14.181z"></path></svg></span></span></a><div class="wds-dropdown__content PagesAvatars-module_dropdownContent__SQXTl" data-testid="recently-visited__item-dropdown"><ul class="pages-list"><li class="pages-list__item"><a href="https://mudae.fandom.com/wiki/Kakera/Reactions" target="_self" rel="" data-tracking-label="recently-visited-link" class="pages-list__item__link"><h5 class="pages-list__item__header">Kakera/Reactions</h5><div class="pages-list__item__label"><div class="pages-list__item__logomark"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174 242" width="1em" height="1em"><path fill="#FA005A" d="M166.935 118.154L50.108 1.273A4.317 4.317 0 0045.405.34a4.314 4.314 0 00-2.662 3.99v98.276L7.365 67.22a4.31 4.31 0 00-4.702-.933A4.312 4.312 0 000 70.277v101.487a24.1 24.1 0 007.07 17.072l46.037 46.099a24.17 24.17 0 0017.068 7.085h33.68a24.14 24.14 0 0017.063-7.075l46.027-46.099A24.133 24.133 0 00174 171.774v-36.533a24.148 24.148 0 00-1.834-9.247 24.137 24.137 0 00-5.231-7.84z"></path><path fill="#FFC500" d="M131.297 160.901a7.24 7.24 0 01-2.108 5.111l-37.11 37.3a7.231 7.231 0 01-7.914 1.582 7.246 7.246 0 01-2.355-1.582l-36.99-37.3a7.221 7.221 0 01-2.117-5.096v-14.191a7.234 7.234 0 012.128-5.116l13.317-13.328a7.225 7.225 0 0110.245 0l18.624 18.645 18.596-18.65a7.22 7.22 0 015.122-2.127 7.228 7.228 0 015.121 2.127l13.318 13.328a7.218 7.218 0 012.123 5.116v14.181z"></path></svg></div><span class="pages-list__item__text">Mudae Wiki</span></div></a></li></ul></div></div><div class="recently-visited-pages-avatars global-explore-navigation__item  wds-dropdown wds-open-to-right" data-tracking-label="recently-visited-link" data-testid="recently-visited__item"><a href="https://bindingofisaacrebirth.fandom.com/wiki/%27M" class="wds-dropdown__toggle"><span class="global-explore-navigation__icon wds-avatar PagesAvatars-module_iconContainer__dlQkA"><span class="wds-avatar__image wds-image-placeholder"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 174 242" width="1em" height="1em"><path fill="#FA005A" d="M166.935 118.154L50.108 1.273A4.317 4.317 0 0045.405.34a4.314 4.314 0 00-2.662 3.99v98.276L7.365 67.22a4.31 4.31 0 00-4.702-.933A4.312 4.312 0 000 70.277v101.487a24.1 24.1 0 007.07 17.072l46.037 46.099a24.17 24.17 0 0017.068 7.085h33.68a24.14 24.14 0 0017.063-7.075l46.027-46.099A24.133 24.133 0 00174 171.774v-36.533a24.148 24.148 0 00-1.834-9.247 24.137 24.137 0 00-5.231-7.84z"></path><path fill="#FFC500" d="M131.297 160.901a7.24 7.24 0 01-2.108 5.111l-37.11 37.3a7.231 7.231 0 01-7.914 1.582 7.246 7.246 0 01-2.355-1.582l-36.99-37.3a7.221 7.221 0 01-2.117-5.096v-14.191a7.234 7.234 0 012.128-5.116l13.317-13.328a7.225 7.225 0 0110.245 0l18.624 18.645 18.596-18.65a7.22 7.22 0 015.122-2.127 7.228 7.228 0 015.121 2.127l13.318 13.328a7.218 7.218 0 012.123 5.116v14.181z"></path></svg></span></span></a><div class="wds-dropdown__content PagesAvatars-module_dropdownContent__SQXTl" data-testid="recently-visited__item-dropdown"><ul class="pages-list"><li class="pages-list__item"><a href="https://bindingofisaacrebirth.fandom.com/wiki/%27M" target="_self" rel="" data-tracking-label="recently-visited-link" class="pages-list__item__link"><h5 class="pages-list__item__header">'M</h5><div class="pages-list__item__label"><img src="https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/3/39/Site-community-image/revision/latest/smart/width/36/height/36?cb=20220402114939" alt="'M" class="pages-list__item__image"><span class="pages-list__item__text">Binding of Isaac: Rebirth Wiki</span></div></a></li></ul></div></div><div class="more-recently-visited-pages global-explore-navigation__item global-explore-navigation__item--with-icon wds-dropdown wds-open-to-right wds-is-touch-device wds-is-handled"><div class="wds-avatar wds-avatar--square"><button class="global-explore-navigation__button wds-avatar__button wds-dropdown__toggle" aria-expanded="false" data-tracking-label="more-recently-visited" data-testid="history__button"><span class="global-explore-navigation__icon HistoryMorePages-module_iconContainer__5oMI2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em"><path d="M18 11h-5V6a1 1 0 10-2 0v6a1 1 0 001 1h6a1 1 0 100-2m-6 11C6.486 22 2 17.514 2 12S6.486 2 12 2s10 4.486 10 10-4.486 10-10 10m0-22C5.383 0 0 5.383 0 12s5.383 12 12 12 12-5.383 12-12S18.617 0 12 0"></path></svg></span><span class="global-explore-navigation__label">History</span></button></div></div></div></div></div>
+      </nav>
+    </div>
+  </div>-->
+
+  <script src="app.js"></script> 
 </body>
 
 </html>
