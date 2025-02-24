@@ -81,3 +81,4 @@ themeToggler.addEventListener("click", () => {
     moonIcon.style.display = "none";
   }
 });
+
